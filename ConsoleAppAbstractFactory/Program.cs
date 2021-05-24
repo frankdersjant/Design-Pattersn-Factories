@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppAbstractFactory.Models;
+using System;
 
 namespace ConsoleAppAbstractFactory
 {
@@ -6,7 +7,10 @@ namespace ConsoleAppAbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MazeGame mazeGame = new MazeGame();
+            MazeFactory mazefactory = new BombedMazeFactory();
+
+            mazeGame.CreateMaze(mazefactory);
         }
     }
 }
