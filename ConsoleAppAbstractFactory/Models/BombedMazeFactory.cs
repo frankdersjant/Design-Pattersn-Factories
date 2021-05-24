@@ -5,8 +5,6 @@
         public BombedMazeFactory()
         {
         }
-
-
         public override Wall MakeWall()
         {
             return new BombedWall();

@@ -13,6 +13,8 @@
             maze.AddRoom(r1);
             maze.AddRoom(r2);
 
+            Wall w = mazeFactory.MakeWall();
+
             r1.SetSide(enumDirection.North, mazeFactory.MakeWall());
             r1.SetSide(enumDirection.East, thegreenDoor);
             r1.SetSide(enumDirection.South, mazeFactory.MakeWall());

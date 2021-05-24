@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ConsoleAppFactoryMethod.Models;
 
 namespace ConsoleAppFactoryMethod
 {
@@ -6,7 +6,9 @@ namespace ConsoleAppFactoryMethod
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MazeGame mazeGame = new MazeGame();
+            mazeGame.createMaze();
+
         }
     }
 }
