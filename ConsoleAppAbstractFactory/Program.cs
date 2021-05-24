@@ -11,6 +11,8 @@ namespace ConsoleAppAbstractFactory
             MazeFactory mazefactory = new BombedMazeFactory();
 
             mazeGame.CreateMaze(mazefactory);
+
+            
         }
     }
 }

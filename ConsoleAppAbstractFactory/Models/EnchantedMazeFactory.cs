@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleAppAbstractFactory.Models
+﻿namespace ConsoleAppAbstractFactory.Models
 {
-    public class EnchantedMazeFactory
+    public class EnchantedMazeFactory : MazeFactory
     {
+        public EnchantedMazeFactory()
+        {
 
+        }
+
+        public override Room MakeRoom(int nr)
+        {
+            return new EnchantedRoom(nr);
+        }
+
+        public override Door MakeDoor(Room r1, Room r2)
+        {
+            return new EnchantedDoor(r1, r2);
+        }
     }
 }
